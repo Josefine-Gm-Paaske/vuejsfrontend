@@ -6,16 +6,21 @@ export default {
 </script>
 
 <template>
+<div class="header">
+  <h1>website</h1>
+  <p>A website template</p>
+</div>
 <div class="navbar">
   <a href="#" class="active">Home</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#" class="right">Contact Details</a>
 </div>
-
-<div class="header">
-  <h1>website</h1>
-  <p>A website template</p>
+<div class="row">
+<div class="side">
+    <h2>Headline</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Description of the picture</p>
 </div>
 </template>
 
