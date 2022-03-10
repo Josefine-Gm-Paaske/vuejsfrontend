@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import Datepicker from "vue3-date-time-picker";
 import "vue3-date-time-picker/dist/main.css";
-import "&lt;script src=&quot;http://code.jquery.com/ui/1.12.1/jquery-ui.min.js&quot;&gt;";
 
 export default {
   name: "VueJsFrontEnd",
