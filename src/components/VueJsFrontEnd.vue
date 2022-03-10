@@ -14,6 +14,9 @@ export default {
 </template>
 
 <style>
+body{
+
+}
   h1{
     background-color: #369;
     color: white;
