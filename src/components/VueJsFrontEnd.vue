@@ -1,21 +1,10 @@
 <script>
-import { ref } from "vue";
-import Datepicker from "vue3-date-time-picker";
-import "vue3-date-time-picker/dist/main.css";
 
 export default {
-  name: "VueJsFrontEnd",
-  components: {
-    Datepicker,
-  },
-  setup() {
-    const date = ref(new Date());
-
-    return {
-      date,
-    };
-  },
-};
+    data() {
+return {}
+    }
+}
 </script>
 
 <template>
@@ -53,10 +42,6 @@ export default {
     <br />
     <h2>HEADING</h2>
     <h5>Title description, {{ new Date().toISOString().split('T')[0] }}</h5>
-    <!--Working on placing a calendar-->
-     <div>
-     <Datepicker v-model="date" />
-     </div>
 <br>
 <br>
   <div class="footer">
