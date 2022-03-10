@@ -1,26 +1,51 @@
 <script>
 export default {
   // component options
-  }
-
+};
 </script>
 
 <template>
-<div class="header">
-  <h1>website</h1>
-  <p>A website template</p>
-</div>
-<div class="navbar">
-  <a href="#" class="active">Home</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="right">Contact Details</a>
-</div>
-<div class="row">
-<div class="side">
-    <h2>Headline</h2>
+  <div class="header">
+    <h1>website</h1>
+    <p>A website template</p>
+  </div>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Upload Memories</a>
+    <a href="#">Camera reviews</a>
+    <a href="#" class="right">Contact Details</a>
+  </div>
+  <div class="row">
+    <div class="side">
+      <h2>Headline</h2>
+      <div class="fakeimg" style="height: 200px">Image</div>
+      <p>Description of the picture</p>
+      <h3>Headline</h3>
+      <p>Write here... Pictures can be added here</p>
+      <div class="fakeimg" style="height: 60px">Image</div>
+      <br />
+      <div class="fakeimg" style="height: 60px">Image</div>
+      <br />
+      <div class="fakeimg" style="height: 60px">Image</div>
+    </div>
+  </div>
+  <div class="main">
+    <h2>HEADING</h2>
+    <h5>Title description, {{new Date().toISOString().split('T')[0]}} </h5>
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Description of the picture</p>
+    <p>Some text..</p>
+    <p>Description</p>
+    <br>
+    <h2>HEADING</h2>
+    <h5>Title description, {{new Date().toISOString().split('T')[0]}}</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Description</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
 </div>
 </template>
 
@@ -56,7 +81,6 @@ export default {
   text-decoration: none;
 }
 
-
 /* Right-aligned link */
 .navbar a.right {
   float: right;
@@ -75,7 +99,7 @@ export default {
 }
 
 /* Column container */
-.row {  
+.row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -92,7 +116,7 @@ export default {
 }
 
 /* Main column */
-.main {   
+.main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
@@ -115,7 +139,7 @@ export default {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .row {
     flex-direction: column;
   }
 }
