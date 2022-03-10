@@ -13,6 +13,7 @@ export default {
     <a href="#">Home</a>
     <a href="#">Upload Memories</a>
     <a href="#">Camera reviews</a>
+    <a href="#">Book a photo session</a>
     <a href="#" class="right">Contact Details</a>
   </div>
   <div class="row">
@@ -137,14 +138,12 @@ export default {
   background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;

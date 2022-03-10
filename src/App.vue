@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <vue-js-front-end msg="Welcome to my Vue.js App"/>
+    <vue-js-front-end msg="Welcome to my Vue.js App" />
   </div>
 </template>
 
 <script>
-import VueJsFrontEnd from './components/VueJsFrontEnd.vue'
+import VueJsFrontEnd from './components/VueJsFrontEnd.vue';
 
 export default {
   name: 'App',
   components: {
     VueJsFrontEnd
-  }
-}
+  },
+};
 </script>
 
 <style>
