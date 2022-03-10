@@ -1,8 +1,20 @@
 <script>
+import { ref } from "vue";
+import Datepicker from "vue3-date-time-picker";
+import "vue3-date-time-picker/dist/main.css";
+import "&lt;script src=&quot;http://code.jquery.com/ui/1.12.1/jquery-ui.min.js&quot;&gt;";
+
 export default {
-  // component options
-  data() {
-    return {};
+  name: "VueJsFrontEnd",
+  components: {
+    Datepicker,
+  },
+  setup() {
+    const date = ref(new Date());
+
+    return {
+      date,
+    };
   },
 };
 </script>
@@ -43,6 +55,9 @@ export default {
     <h2>HEADING</h2>
     <h5>Title description, {{ new Date().toISOString().split('T')[0] }}</h5>
     <!--Working on placing a calendar-->
+     <div>
+     <Datepicker v-model="date" />
+     </div>
 <br>
 <br>
   <div class="footer">
