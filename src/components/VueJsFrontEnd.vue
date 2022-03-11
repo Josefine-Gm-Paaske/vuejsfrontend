@@ -1,9 +1,32 @@
 <script>
+import BookPhotoSession from './BookPhotoSession.vue';
+import CameraReviews from './CameraReviews.vue';
+import UploadMemories from './UploadMemories';
+import ContactDetails from './ContactDetails.vue';
+
+const routes = {
+  '/': BookPhotoSession,
+  '/': CameraReviews,
+  '/': UploadMemories,
+  '/': ContactDetails,
+};
 
 export default {
-    data() {
-return {}
+  data() {
+    return {
+      currentPath: window.location.hash
     }
+  },
+    computed: {
+    currentView() {
+      return routes[this.currentPath.slice(1) || '/'] 
+    }
+  },
+    mounted() {
+    window.addEventListener('hashchange', () => {
+		  this.currentPath = window.location.hash
+		})
+  }
 }
 </script>
 
@@ -13,11 +36,12 @@ return {}
     <p>A website template</p>
   </div>
   <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Upload Memories</a>
-    <a href="#">Camera reviews</a>
-    <a href="#">Book a photo session</a>
+    <a href="#">Home</a> 
+    <a href="#">Upload Memories</a> 
+    <a href="#">Camera reviews</a> 
+    <a href="#">Book a photo session</a> 
     <a href="#" class="right">Contact Details</a>
+    <component :is="currentView"/>
   </div>
   <div class="row">
     <div class="side">
