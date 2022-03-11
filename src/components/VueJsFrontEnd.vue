@@ -23,21 +23,21 @@ return {}
     <div class="side">
       <h2>Headline</h2>
       <div>
-      <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
+      <img class="responsive" src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80">
       </div>
       <p>Description of the picture</p>
       <h3>Headline</h3>
       <p>Write here... Pictures can be added here</p>
       <div>
-      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw5NTA4NDQyNnx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60">
+      <img class="responsive" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
       </div>
       <br />
       <div>
-      <img src="https://images.unsplash.com/photo-1533759413974-9e15f3b745ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+      <img class="responsive" src="https://images.unsplash.com/photo-1533759413974-9e15f3b745ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
       </div>
       <br />
       <div>
-      <img src="https://images.unsplash.com/photo-1600607688066-890987f18a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <img class="responsive" src="https://images.unsplash.com/photo-1600607688066-890987f18a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ return {}
     <h2>HEADING</h2>
     <h5>Title description, {{ new Date().toISOString().split('T')[0] }}</h5>
     <div>
-    <img src="https://images.unsplash.com/photo-1495521939206-a217db9df264?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  >
+    <img class="responsive" src="https://images.unsplash.com/photo-1495521939206-a217db9df264?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  >
     </div>
     <p>Some text..</p>
     <p>Description</p>
@@ -60,9 +60,9 @@ return {}
 </template>
 
 <style scoped>
-.img {
-  height: 275px; 
-  width: 700px; 
+.responsive {
+  height: 170px; 
+  width: 100%; 
   object-fit: cover;
 }
 
