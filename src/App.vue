@@ -1,5 +1,5 @@
 <template>
-    <vue-js-front-end />
+  <vue-js-front-end />
 </template>
 
 <script>
