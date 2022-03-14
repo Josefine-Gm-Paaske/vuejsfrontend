@@ -19,8 +19,7 @@ export default {
     VueJsFrontEnd,
     BookPhotoSession,
     CameraReviews,
-    UploadMemories,
-    ContactDetails,
+    UploadMemories,   
   },
 };
 </script>
