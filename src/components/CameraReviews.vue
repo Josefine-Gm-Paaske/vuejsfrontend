@@ -7,5 +7,4 @@ export default {
 </script>
 
 <template>
-  <h1>Camera Reviews</h1>
 </template>

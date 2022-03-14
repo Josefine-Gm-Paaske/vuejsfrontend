@@ -7,5 +7,4 @@ export default {
 </script>
 
 <template>
-<h1>Upload Memories</h1>
 </template>
