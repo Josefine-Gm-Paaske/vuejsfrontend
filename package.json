@@ -8,13 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "*.prod.js": "*",
+    "@vue/compiler-sfc": "^3.2.31",
+    "add": "2.0.6",
     "core-js": "3.21.1",
     "eslint": "8.10.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.3.1",
+    "null": "2.0.0",
     "vue": "3.2.31"
   },
   "devDependencies": {
