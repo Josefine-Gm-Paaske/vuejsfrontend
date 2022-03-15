@@ -4,12 +4,12 @@ import CameraReviews from './CameraReviews.vue';
 import UploadMemories from './UploadMemories';
 import ContactDetails from './ContactDetails.vue';
 
-const routes = {
-  '/': BookPhotoSession,
-  '/': CameraReviews,
-  '/': UploadMemories,
-  '/': ContactDetails,
-};
+const routes = [
+  {path: './components/chat:', component: BookPhotoSession},
+  {path:'./components/CameraReviews', component: CameraReviews},
+  {path: './components/UploadMemories', component: UploadMemories},
+ {path: './components/ContactDetails', component: ContactDetails},
+];
 
 export default {
   data() {
