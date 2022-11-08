@@ -33,7 +33,7 @@ export default {
 <template>
   <div class="header" style="background:url('https://images.unsplash.com/photo-1641890533142-71727d69491d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80'); background-position: center bottom;">
     <h1>website</h1>
-    <p>A website template</p>
+    <p style="text-shadow: 2px 2px 8px black;">A website template</p>
   </div>
   <div class="navbar">
     <a href="#">Home</a> 
@@ -92,7 +92,7 @@ export default {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 50px;
   text-align: center;
   background: #1abc9c;
   color: white;
@@ -101,6 +101,7 @@ export default {
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
+  text-shadow: 2px 2px 8px black;
 }
 
 .navbar {
